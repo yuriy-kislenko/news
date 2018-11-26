@@ -1,10 +1,51 @@
 .header {
+  background: #87509c;
+  padding: 20px 0;
+
+    & .logo {
+
+    }
+
+    & .nav {
+
+      position: absolute;
+      right: 0;
+
+        & ul li {
+          float: left;
+          margin-right: 25px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          & a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-family: $primaryFont;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            text-transform: uppercase;
+            transition: $primaryTrans;
+
+            &:hover {
+              background: #643a79;
+            }
+
+          }
+
+        }
+
+    }
 
 }
-.logo {
-  margin: -58px 0 0 -100px;
-  @include position(absolute, 50% 0 0 50%);
-  img {
 
+@media only screen and (max-width: 991px) {
+  .header .nav ul li {
+    margin-right: 0;
   }
 }

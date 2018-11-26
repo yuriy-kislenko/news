@@ -10,29 +10,58 @@
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
 
     <script src="assets/components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
     <header class="header" role="banner">
-      <div class="logo">
-        <a href="/">
-          <img src="assets/img/logo.png" alt="Logo">
-        </a>
+      <div class="container">
+        <div class="row">
+          <div class="logo col-md-3 col-sm-4 col-xs-3">
+            <a href="/">
+              <img src="assets/img/logo.png" alt="Logo">
+            </a>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-9">
+            <nav class="nav" role="navigation">
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/">About</a>
+                </li>
+                <li>
+                  <a href="/">Work</a>
+                </li>
+                <li>
+                  <a href="/">Blog</a>
+                </li>
+                <li>
+                  <a href="/">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
-      <nav class="nav" role="navigation">
-        <ul>
-          <li>
-            <a href="/"></a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main class="main" role="main">
+        <section class="header__section">
+            <div class="container">
+                <div class="row">
+                    <div class="header__text col-md-12">
+                      <p>Hi there! We are the new kids on the block<br>
+                        and we build awesome websites and mobile apps.</p>
 
+                      <a href="/" class="header__link">WORK WITH US!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <aside class="sidebar" role="complementary">

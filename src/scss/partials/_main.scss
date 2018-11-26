@@ -1,3 +1,52 @@
 .main {
+    
+    & .header__section {
+        background: #87509c;
+        padding-top: 150px;
+        padding-bottom: calc(150px + 82px);
+
+        & .header__text {
+            text-align: center;
+            
+            & p {
+                text-align: center;
+                color: #f7f3ea;
+                font-family: $primaryFont;
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 48.82px;
+                text-transform: uppercase;
+                margin-bottom: 54px;
+            }
+
+
+        }
+
+        & .header__link {
+            padding: 20px 60px;
+            background: #eb7d4b;
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: $primaryFont;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26.19px;
+            text-transform: uppercase;
+            letter-spacing: 0.27px;
+            border-radius: $primaryBorderRadious;
+            -webkit-box-shadow: 0px 4px 0px 0px rgba(200,106,64,1);
+            -moz-box-shadow: 0px 4px 0px 0px rgba(200,106,64,1);
+            box-shadow: 0px 4px 0px 0px rgba(200,106,64,1);
+            transition: $primaryTrans;
+
+            &:hover {
+                background: #c86a40;
+            }
+
+        }
+
+    }
+
 
 }
