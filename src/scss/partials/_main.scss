@@ -281,7 +281,7 @@
 
     } // end we got skills sections
 
-    & .portfolio {
+    & .portfolio { // begin portfolio sections
         background: $portfolioColor;
         padding-top: 115px;
         padding-bottom: 115px;
@@ -425,7 +425,88 @@
 
         }
         
-    }
+    } // end portfolio sections
+
+    & .about__us { // begin about us sections
+        background: $aboutUsColor;
+        padding-top: 115px;
+        padding-bottom: calc(115px - 60px);
+
+        & .about__heading {
+            
+            & p {
+                color: #ffffff;
+                @include heading;
+
+                &::after {
+                    @include underline;
+                }
+
+            }
+
+        }
+
+        & .about__descriptions {
+
+            & p {
+                color: #ffffff;
+                @include descriptions;
+            }
+
+        }
+
+        & .about__item {
+
+            margin-bottom: 30px;
+
+            & .about__quote {
+                
+                & p {
+                color: #ffffff;
+                font-family: $primaryFont;
+                font-size: 21px;
+                font-style: italic;
+                line-height: 31.2px;
+                letter-spacing: 0.35px;
+                margin-top: 0;
+                }
+
+            }
+
+            & .about__head {
+                
+                & p {
+                color: #ffffff;
+                font-family: $primaryFont;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 26px;
+                text-transform: uppercase;
+                letter-spacing: 0.48px;
+                margin-bottom: 0;
+                }
+
+            }
+
+            & .about__person--position {
+                
+                & p {
+                color: #ffdd99;
+                font-family: $primaryFont;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0.36px;
+                margin-top: 0;
+                margin-bottom: 60px;
+                }
+
+            }
+
+        }
+        
+
+    } // end about us sections
 
 
 }
@@ -439,5 +520,11 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about__item {
+        text-align: center;
     }
 }

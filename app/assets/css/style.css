@@ -1396,6 +1396,68 @@ textarea {
       .main .portfolio .portfolio__button--lm a:hover {
         background: #16927c; }
 
+.main .about__us {
+  background: #d74680;
+  padding-top: 115px;
+  padding-bottom: calc(115px - 60px); }
+  .main .about__us .about__heading p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative; }
+    .main .about__us .about__heading p::after {
+      content: "";
+      width: 84px;
+      height: 3px;
+      background: #000;
+      opacity: .15;
+      display: inline-block;
+      position: absolute;
+      bottom: -35px;
+      left: calc(50% - 42px); }
+  .main .about__us .about__descriptions p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    margin-bottom: 50px; }
+  .main .about__us .about__item {
+    margin-bottom: 30px; }
+    .main .about__us .about__item .about__quote p {
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 21px;
+      font-style: italic;
+      line-height: 31.2px;
+      letter-spacing: 0.35px;
+      margin-top: 0; }
+    .main .about__us .about__item .about__head p {
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 0.48px;
+      margin-bottom: 0; }
+    .main .about__us .about__item .about__person--position p {
+      color: #ffdd99;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.36px;
+      margin-top: 0;
+      margin-bottom: 60px; }
+
 @media only screen and (max-width: 430px) {
   .filter__item {
     display: block;
@@ -1403,6 +1465,10 @@ textarea {
     margin-bottom: 10px; }
     .filter__item:last-child {
       margin-bottom: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .about__item {
+    text-align: center; } }
 
 @font-face {
   font-family: 'Font-Name';
