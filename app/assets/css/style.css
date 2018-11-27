@@ -23,8 +23,7 @@ body {
   transition: all .4s .3s ease-in; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -925,7 +924,27 @@ textarea {
 
 .header {
   background: #87509c;
-  padding: 20px 0; }
+  padding: 20px 0;
+  /*
+      * Just a quick hamburger
+      */
+  /* 
+      * Transform all the slices of hamburger
+      * into a crossmark.
+      */
+  /*
+      * But let's hide the middle one.
+      */
+  /*
+      * Ohyeah and the last one should go the other direction
+      */
+  /*
+      * Make this absolute positioned
+      * at the top left of the screen
+      */
+  /*
+      * And let's slide it in from the left
+      */ }
   .header .nav {
     position: absolute;
     right: 0; }
@@ -948,10 +967,106 @@ textarea {
         transition: all 200ms ease-in-out; }
         .header .nav ul li a:hover {
           background: #643a79; }
+  .header .nav-hamb {
+    display: none; }
+  .header a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease; }
+  .header a:hover {
+    text-decoration: none; }
+  .header #menuToggle {
+    display: block;
+    position: relative;
+    top: -25px;
+    right: -85%;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .header #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+  .header #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    -ms-transform-origin: 4px 0px;
+        transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  .header #menuToggle span:first-child {
+    -ms-transform-origin: 0% 0%;
+        transform-origin: 0% 0%; }
+  .header #menuToggle span:nth-last-child(2) {
+    -ms-transform-origin: 0% 100%;
+        transform-origin: 0% 100%; }
+  .header #menuToggle input:checked ~ span {
+    opacity: 1;
+    -ms-transform: rotate(45deg) translate(-2px, -1px);
+        transform: rotate(45deg) translate(-2px, -1px);
+    background: #bdbdbd; }
+  .header #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -ms-transform: rotate(0deg) scale(0.2, 0.2);
+        transform: rotate(0deg) scale(0.2, 0.2); }
+  .header #menuToggle input:checked ~ span:nth-last-child(2) {
+    -ms-transform: rotate(-45deg) translate(0, -1px);
+        transform: rotate(-45deg) translate(0, -1px); }
+  .header #menu {
+    margin: 30px 0 0 -175px;
+    padding: 90px;
+    min-width: 300px;
+    padding-top: 30px;
+    height: 100vh;
+    text-transform: uppercase;
+    background: #87509c;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    -ms-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    box-shadow: -4px 5px 19px -4px rgba(0, 0, 0, 0.75);
+    font-family: "Titillium Web", sans-serif; }
+  .header #menu li {
+    padding: 15px 0;
+    font-size: 20px; }
+  .header #menuToggle input:checked ~ ul {
+    -ms-transform: none;
+        transform: none; }
 
 @media only screen and (max-width: 991px) {
   .header .nav ul li {
     margin-right: 0; } }
+
+@media only screen and (max-width: 636px) {
+  .header {
+    max-height: 40px; }
+  .logo {
+    display: none; }
+  .desctop {
+    display: none; }
+  .nav-hamb {
+    display: block !important;
+    overflow: hidden; } }
 
 .nav ul {
   list-style: none; }
@@ -988,6 +1103,149 @@ textarea {
     transition: all 200ms ease-in-out; }
     .main .header__section .header__link:hover {
       background: #c86a40; }
+
+.main .services__we--provide {
+  background: #17c2a4;
+  padding-top: 115px;
+  padding-bottom: 115px; }
+  .main .services__we--provide .services__heading p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative; }
+    .main .services__we--provide .services__heading p::after {
+      content: "";
+      width: 84px;
+      height: 3px;
+      background: #000;
+      opacity: .15;
+      display: inline-block;
+      position: absolute;
+      bottom: -35px;
+      left: calc(50% - 42px); }
+  .main .services__we--provide .services__descriptions p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    margin-bottom: 50px; }
+  .main .services__we--provide .services__item {
+    text-align: center; }
+    .main .services__we--provide .services__item .services__item--heading {
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.48px; }
+    .main .services__we--provide .services__item .services__item--descriptions {
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.32px; }
+
+.main .meet__team {
+  background: #e7f1f8;
+  padding-top: 115px;
+  padding-bottom: 115px; }
+  .main .meet__team .meetteam__heading p {
+    color: #000000;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative; }
+    .main .meet__team .meetteam__heading p::after {
+      content: "";
+      width: 84px;
+      height: 3px;
+      background: #000;
+      opacity: .15;
+      display: inline-block;
+      position: absolute;
+      bottom: -35px;
+      left: calc(50% - 42px); }
+  .main .meet__team .meetteam__descriptions p {
+    color: #000000;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    margin-bottom: 50px; }
+  .main .meet__team .meetteam__item {
+    text-align: center;
+    margin-bottom: 25px; }
+    .main .meet__team .meetteam__item .meetteam__item--heading p:first-of-type {
+      color: #27283d;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.48px; }
+    .main .meet__team .meetteam__item .meetteam__item--heading .work__position {
+      color: #30bae7;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.32px; }
+    .main .meet__team .meetteam__item .meetteam__item--descriptions p {
+      color: #3c4761;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.32px; }
+    .main .meet__team .meetteam__item .meetteam__item--socials {
+      display: inline-block;
+      text-align: center; }
+      .main .meet__team .meetteam__item .meetteam__item--socials ul {
+        list-style: none;
+        -webkit-padding-start: 0;
+                padding-inline-start: 0; }
+        .main .meet__team .meetteam__item .meetteam__item--socials ul li {
+          float: left;
+          margin-right: 40px; }
+          .main .meet__team .meetteam__item .meetteam__item--socials ul li:last-child {
+            margin-right: 0; }
+          .main .meet__team .meetteam__item .meetteam__item--socials ul li a {
+            font-size: 16px;
+            position: relative;
+            z-index: 1;
+            color: #ffffff;
+            transition: all 200ms ease-in-out; }
+            .main .meet__team .meetteam__item .meetteam__item--socials ul li a::after {
+              content: "";
+              width: 40px;
+              height: 40px;
+              background: #bdd1df;
+              border-radius: 50px;
+              position: absolute;
+              left: -13px;
+              top: -10px;
+              z-index: -1; }
+            .main .meet__team .meetteam__item .meetteam__item--socials ul li a:hover {
+              color: #000000; }
+              .main .meet__team .meetteam__item .meetteam__item--socials ul li a:hover::after {
+                content: "";
+                background: #ffffff; }
 
 @font-face {
   font-family: 'Font-Name';
