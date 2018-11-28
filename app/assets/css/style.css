@@ -1458,6 +1458,95 @@ textarea {
       margin-top: 0;
       margin-bottom: 60px; }
 
+.main .contact {
+  background: #3c5499;
+  padding-top: 115px;
+  padding-bottom: 115px; }
+  .main .contact .contact__heading p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative; }
+    .main .contact .contact__heading p::after {
+      content: "";
+      width: 84px;
+      height: 3px;
+      background: #000;
+      opacity: .15;
+      display: inline-block;
+      position: absolute;
+      bottom: -35px;
+      left: calc(50% - 42px); }
+  .main .contact .contact__descriptions p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    margin-bottom: 50px; }
+  .main .contact .contact__item {
+    text-align: center;
+    overflow: hidden; }
+    .main .contact .contact__item form {
+      display: inline-block; }
+      .main .contact .contact__item form input {
+        width: 414px;
+        padding: 15px 0 15px 25px;
+        background: #273a71;
+        border-radius: 3px;
+        border: none;
+        color: #ffffff;
+        opacity: 1;
+        outline: none;
+        font-weight: 500;
+        outline: none; }
+        .main .contact .contact__item form input:nth-of-type(1) {
+          margin-right: 20px; }
+      .main .contact .contact__item form textarea {
+        width: 100%;
+        margin-top: 25px;
+        padding: 15px 0 15px 25px;
+        max-width: 858px;
+        max-height: 200px;
+        min-height: 200px;
+        background: #273a71;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        opacity: 1;
+        font-weight: 500;
+        margin-bottom: 25px; }
+    .main .contact .contact__item button {
+      text-decoration: none;
+      padding: 20px 60px;
+      background: #30bae7;
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26.19px;
+      text-transform: uppercase;
+      letter-spacing: 0.27px;
+      border-radius: 3px;
+      box-shadow: 0px 4px 0px 0px #278cad;
+      transition: all 200ms ease-in-out;
+      border-bottom: 4px solid #278cad;
+      border-top: none;
+      border-left: none;
+      border-right: none; }
+      .main .contact .contact__item button:hover {
+        background: #278cad; }
+
 @media only screen and (max-width: 430px) {
   .filter__item {
     display: block;
@@ -1469,6 +1558,39 @@ textarea {
 @media only screen and (max-width: 767px) {
   .about__item {
     text-align: center; } }
+
+@media only screen and (max-width: 991px) {
+  .contact__item input {
+    width: 300px !important; } }
+
+@media only screen and (max-width: 653px) {
+  .contact__item input {
+    width: 100% !important; }
+    .contact__item input:first-child {
+      margin-bottom: 25px; } }
+
+:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  /* Firefox */ }
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff; }
+
+textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500; }
 
 @font-face {
   font-family: 'Font-Name';
