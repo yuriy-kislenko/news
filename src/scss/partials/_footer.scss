@@ -1,82 +1,119 @@
 .footer {
-    background: #344b8e;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
-    .footer__items {
-        text-align: center;
+   background: #f8f8f8;
+   box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
+    & .flex-container {
+        display: flex;
+        justify-content: space-between;
+        min-width: 980px;
+        max-width: 980px;
+        margin: 0 auto;
 
-        & ul {
-            list-style-type:  none;
-            padding-left: 0;
+        & .flex-item {
 
-            & li {
-                display: inline-block;
-                margin-right: 50px;
+            &:nth-child(2) {
+                margin-top: 42px;
+            }
+            &:nth-child(3) {
+                margin-top: 42px;
+            }
 
-                &:last-child {
-                    margin-right: 0;
-                }
+            & p {
+            opacity: 0.5;
+            color: #393939;
+            font-family: $primaryFont;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: -0.1px;
 
-                & a {
-                    display: inline-block;
-                    text-decoration: none;
-                    color: #ffffff;
-                    font-family: $primaryFont;
-                    font-size: 24px;
-                    font-weight: 600;
-                    line-height: 29.91px;
-                    letter-spacing: 0.48px;
-                    transition: $primaryTrans;
+            &:last-child {
+            opacity: 0.3;
+            color: #393939;
+            font-family: $primaryFont;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 19px;
+                 }
+            }
 
-                    &:hover {
-                        color: #30bae7;
+
+            & ul {
+                padding-left: 0;
+
+                & li {
+
+                    list-style-type: none;
+
+                    & a {
+                        text-decoration: none;
+                        opacity: 0.3;
+                        color: #393939;
+                        font-family: $primaryFont;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 19px;
                     }
 
                 }
-
             }
 
-        }
-
-    }
-
-}
-
-
-@media screen and (max-width: 1199px) {
-    .footer__items {
-        & ul {
-            & li {
-                margin-right: 25px !important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .footer__items {
-        & ul {
-            & li {
-                margin-right: 5px !important;
+            & .social__wrapper {
+             
                 & a {
-                    font-size: 16px !important;
+                    width: 24px;
+                    height: 25px;
+                    background: url(../img/soc-nav.png);
+                    transition: $primaryTrans;
+                    
                 }
+
+                & a:nth-child(1) {
+                    background-position: -34px -0px;
+                    display: inline-block;
+                    &:hover {
+                        background-position: -5px -0px;
+                    }
+                }
+
+                & a:nth-child(2) {
+                    background-position: -34px -29px;
+                    display: inline-block;
+                    &:hover {
+                        background-position: -5px -29px; 
+                    }
+                }
+
+                & a:nth-child(3) {
+                    background-position: -34px -58px;
+                    display: inline-block;
+                    &:hover {
+                        background-position: -5px -58px;
+                    }
+                }
+
+                & a:nth-child(4) {
+                    background-position: -34px -87px;
+                    display: inline-block;
+                    &:hover {
+                        background-position: -5px -87px;
+                    }
+                }
+
             }
+
         }
+
     }
 }
 
-@media screen and (max-width: 508px) {
-    .footer__items {
-        & ul {
-            & li {
-                display: block !important;
-                margin-bottom: 10px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
+
+.main {
+    max-width: 980px;
+    min-width: 980px;
+    margin: 0 auto;
 }
+.header {
+    max-width: 980px;
+    min-width: 980px;
+    margin: 0 auto;
+}
+
