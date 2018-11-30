@@ -369,9 +369,44 @@ body {
                 letter-spacing: -0.12px;
             }
 
-            & img {
-                width: auto;
-                height: 41px;
+            & a {
+                // width: auto;
+                // height: 41px;
+                background: url(../img/clients/cssprite.png);
+                transition: $primaryTrans;
+                
+                &:nth-child(2) {
+                    background-position: -0px -0px; width: 104px; height: 42px;
+                    &:hover {
+                        background-position: -0px -42px; width: 104px; height: 42px;
+                    }
+                }
+                &:nth-child(3) {
+                    background-position: -0px -230px; width: 66px; height: 43px;
+                    &:hover {
+                        background-position: -0px -273px; width: 66px; height: 43px;  
+                    }
+                }
+                &:nth-child(4) {
+                    background-position: -0px -84px; width: 71px; height: 44px;
+                    &:hover {
+                        background-position: -0px -128px; width: 71px; height: 44px;
+                    }
+                }
+                &:nth-child(5) {
+                    background-position: -0px -172px; width: 71px; height: 29px;
+                    &:hover {
+                        background-position: -0px -201px; width: 71px; height: 29px;      
+                    }
+                }
+                &:nth-child(6) {
+                    background: url(../img/clients/5.png);
+                    width: 92px!important;
+                    height: 30px!important;
+                    background-repeat: repeat-y;
+                    background-position: 0 -172px !important;
+                }
+                
             }
         }
     }

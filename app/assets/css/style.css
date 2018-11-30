@@ -772,9 +772,47 @@ body {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.12px; }
-  .main .clients .container img {
-    width: auto;
-    height: 41px; }
+  .main .clients .container a {
+    background: url(../img/clients/cssprite.png);
+    transition: all 200ms ease-in-out; }
+    .main .clients .container a:nth-child(2) {
+      background-position: -0px -0px;
+      width: 104px;
+      height: 42px; }
+      .main .clients .container a:nth-child(2):hover {
+        background-position: -0px -42px;
+        width: 104px;
+        height: 42px; }
+    .main .clients .container a:nth-child(3) {
+      background-position: -0px -230px;
+      width: 66px;
+      height: 43px; }
+      .main .clients .container a:nth-child(3):hover {
+        background-position: -0px -273px;
+        width: 66px;
+        height: 43px; }
+    .main .clients .container a:nth-child(4) {
+      background-position: -0px -84px;
+      width: 71px;
+      height: 44px; }
+      .main .clients .container a:nth-child(4):hover {
+        background-position: -0px -128px;
+        width: 71px;
+        height: 44px; }
+    .main .clients .container a:nth-child(5) {
+      background-position: -0px -172px;
+      width: 71px;
+      height: 29px; }
+      .main .clients .container a:nth-child(5):hover {
+        background-position: -0px -201px;
+        width: 71px;
+        height: 29px; }
+    .main .clients .container a:nth-child(6) {
+      background: url(../img/clients/5.png);
+      width: 92px !important;
+      height: 30px !important;
+      background-repeat: repeat-y;
+      background-position: 0 -172px !important; }
 
 .bg1 {
   background: #fefefe; }
@@ -860,6 +898,26 @@ body {
       display: inline-block; }
       .footer .flex-container .flex-item .social__wrapper a:nth-child(4):hover {
         background-position: -5px -87px; }
+    .footer .flex-container .flex-item:nth-child(1) a {
+      transition: all 200ms ease-in-out; }
+      .footer .flex-container .flex-item:nth-child(1) a:hover {
+        color: #ae3b44;
+        opacity: 1; }
+    .footer .flex-container .flex-item:nth-child(2) a {
+      transition: all 200ms ease-in-out; }
+      .footer .flex-container .flex-item:nth-child(2) a:hover {
+        color: #ae3b44;
+        opacity: 1; }
+    .footer .flex-container .flex-item:nth-child(3) a {
+      transition: all 200ms ease-in-out; }
+      .footer .flex-container .flex-item:nth-child(3) a:hover {
+        color: #ae3b44;
+        opacity: 1; }
+    .footer .flex-container .flex-item:nth-child(4) a {
+      transition: all 200ms ease-in-out; }
+      .footer .flex-container .flex-item:nth-child(4) a:hover {
+        color: #ae3b44;
+        opacity: 1; }
 
 .main {
   max-width: 980px;
@@ -869,7 +927,9 @@ body {
 .header {
   max-width: 980px;
   min-width: 980px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 @font-face {
   font-family: 'Font-Name';
