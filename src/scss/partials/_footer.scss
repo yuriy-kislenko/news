@@ -22,7 +22,7 @@
                 margin-left: -39px;
             }
 
-            & p {
+            & h4 {
             opacity: 0.5;
             color: #393939;
             font-family: $primaryFont;
@@ -71,7 +71,7 @@
                     
                 }
 
-                & a:nth-child(2) {
+                & .facebook {
                     background-position: -34px -0px;
                     display: inline-block;
                     &:hover {
@@ -79,7 +79,7 @@
                     }
                 }
 
-                & a:nth-child(3) {
+                & .linkedin {
                     background-position: -34px -29px;
                     display: inline-block;
                     &:hover {
@@ -87,7 +87,7 @@
                     }
                 }
 
-                & a:nth-child(4) {
+                & .rss {
                     background-position: -34px -58px;
                     display: inline-block;
                     &:hover {
@@ -95,7 +95,7 @@
                     }
                 }
 
-                & a:nth-child(1) {
+                & .twitter {
                     background-position: -34px -87px;
                     display: inline-block;
                     &:hover {

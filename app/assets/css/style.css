@@ -821,49 +821,49 @@ body {
     .main .clients .container a {
       background: url(../img/clients/cssprite.png);
       transition: all 200ms ease-in-out; }
-      .main .clients .container a:nth-child(2) {
-        background-position: -0px -0px;
+    .main .clients .container .creative__studio {
+      background-position: -0px -0px;
+      width: 104px;
+      height: 42px;
+      margin-left: -11px; }
+      .main .clients .container .creative__studio:hover {
+        background-position: -0px -42px;
         width: 104px;
-        height: 42px;
-        margin-left: -11px; }
-        .main .clients .container a:nth-child(2):hover {
-          background-position: -0px -42px;
-          width: 104px;
-          height: 42px; }
-      .main .clients .container a:nth-child(3) {
-        background-position: -0px -230px;
+        height: 42px; }
+    .main .clients .container .kreatif {
+      background-position: -0px -230px;
+      width: 66px;
+      height: 43px;
+      margin-left: -10px; }
+      .main .clients .container .kreatif:hover {
+        background-position: -0px -273px;
         width: 66px;
-        height: 43px;
-        margin-left: -10px; }
-        .main .clients .container a:nth-child(3):hover {
-          background-position: -0px -273px;
-          width: 66px;
-          height: 43px; }
-      .main .clients .container a:nth-child(4) {
-        background-position: -0px -84px;
+        height: 43px; }
+    .main .clients .container .mwstudio {
+      background-position: -0px -84px;
+      width: 71px;
+      height: 44px;
+      margin-right: -20px; }
+      .main .clients .container .mwstudio:hover {
+        background-position: -0px -128px;
         width: 71px;
-        height: 44px;
-        margin-right: -20px; }
-        .main .clients .container a:nth-child(4):hover {
-          background-position: -0px -128px;
-          width: 71px;
-          height: 44px; }
-      .main .clients .container a:nth-child(5) {
-        background-position: -0px -172px;
+        height: 44px; }
+    .main .clients .container .gofx {
+      background-position: -0px -172px;
+      width: 71px;
+      height: 29px;
+      margin-right: -23px; }
+      .main .clients .container .gofx:hover {
+        background-position: -0px -201px;
         width: 71px;
-        height: 29px;
-        margin-right: -23px; }
-        .main .clients .container a:nth-child(5):hover {
-          background-position: -0px -201px;
-          width: 71px;
-          height: 29px; }
-      .main .clients .container a:nth-child(6) {
-        background: url(../img/clients/5.png);
-        width: 92px !important;
-        height: 30px !important;
-        background-repeat: repeat-y;
-        background-position: 0 -172px !important;
-        margin-right: 50px; }
+        height: 29px; }
+    .main .clients .container .lerftech {
+      background: url(../img/clients/5.png);
+      width: 92px !important;
+      height: 30px !important;
+      background-repeat: repeat-y;
+      background-position: 0 -172px !important;
+      margin-right: 50px; }
 
 .bg1 {
   background: #fefefe; }
@@ -903,14 +903,14 @@ body {
     .footer .flex-container .flex-item:nth-child(3) {
       margin-top: 40px;
       margin-left: -39px; }
-    .footer .flex-container .flex-item p {
+    .footer .flex-container .flex-item h4 {
       opacity: 0.5;
       color: #393939;
       font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
       font-size: 15px;
       font-weight: 400;
       letter-spacing: -0.1px; }
-      .footer .flex-container .flex-item p:last-child {
+      .footer .flex-container .flex-item h4:last-child {
         opacity: 0.3;
         color: #393939;
         font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -934,25 +934,25 @@ body {
       height: 25px;
       background: url(../img/soc-nav.png);
       transition: all 200ms ease-in-out; }
-    .footer .flex-container .flex-item .social__wrapper a:nth-child(2) {
+    .footer .flex-container .flex-item .social__wrapper .facebook {
       background-position: -34px -0px;
       display: inline-block; }
-      .footer .flex-container .flex-item .social__wrapper a:nth-child(2):hover {
+      .footer .flex-container .flex-item .social__wrapper .facebook:hover {
         background-position: -5px -0px; }
-    .footer .flex-container .flex-item .social__wrapper a:nth-child(3) {
+    .footer .flex-container .flex-item .social__wrapper .linkedin {
       background-position: -34px -29px;
       display: inline-block; }
-      .footer .flex-container .flex-item .social__wrapper a:nth-child(3):hover {
+      .footer .flex-container .flex-item .social__wrapper .linkedin:hover {
         background-position: -5px -29px; }
-    .footer .flex-container .flex-item .social__wrapper a:nth-child(4) {
+    .footer .flex-container .flex-item .social__wrapper .rss {
       background-position: -34px -58px;
       display: inline-block; }
-      .footer .flex-container .flex-item .social__wrapper a:nth-child(4):hover {
+      .footer .flex-container .flex-item .social__wrapper .rss:hover {
         background-position: -5px -58px; }
-    .footer .flex-container .flex-item .social__wrapper a:nth-child(1) {
+    .footer .flex-container .flex-item .social__wrapper .twitter {
       background-position: -34px -87px;
       display: inline-block; }
-      .footer .flex-container .flex-item .social__wrapper a:nth-child(1):hover {
+      .footer .flex-container .flex-item .social__wrapper .twitter:hover {
         background-position: -5px -87px; }
     .footer .flex-container .flex-item:nth-child(1) a {
       transition: all 200ms ease-in-out; }
