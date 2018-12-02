@@ -1,20 +1,28 @@
 .header {
+  max-width: 980px;
+  min-width: 980px;
+  margin: 0 auto;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 40px 0;
 
     & .logo {
 
     }
 
     & .nav {
+      margin-right: 25px;
 
       // position: absolute;
       // right: 0;
 
         & ul li {
-          float: left;
-          margin-right: 25px;
+          margin-right: 24px;
+          display: inline-block;
+          padding-left: 0;
 
           &:last-child {
             margin-right: 0;
@@ -26,7 +34,7 @@
             font-size: 13px;
             transition: $primaryTrans;
             letter-spacing: -0.51px;
-            font-weight: 700;
+            font-weight: 500;
             letter-spacing: -0.51px;
             font-family: $primaryFont;
 

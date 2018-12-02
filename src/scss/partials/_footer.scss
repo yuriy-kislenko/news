@@ -7,14 +7,19 @@
         min-width: 980px;
         max-width: 980px;
         margin: 0 auto;
+        padding-top: 8px;
+        padding-left: 17px;
+        padding-right: 60px;
 
         & .flex-item {
 
             &:nth-child(2) {
-                margin-top: 42px;
+                margin-top: 40px;
+                margin-left: -39px;
             }
             &:nth-child(3) {
-                margin-top: 42px;
+                margin-top: 40px;
+                margin-left: -39px;
             }
 
             & p {
@@ -66,7 +71,7 @@
                     
                 }
 
-                & a:nth-child(1) {
+                & a:nth-child(2) {
                     background-position: -34px -0px;
                     display: inline-block;
                     &:hover {
@@ -74,7 +79,7 @@
                     }
                 }
 
-                & a:nth-child(2) {
+                & a:nth-child(3) {
                     background-position: -34px -29px;
                     display: inline-block;
                     &:hover {
@@ -82,7 +87,7 @@
                     }
                 }
 
-                & a:nth-child(3) {
+                & a:nth-child(4) {
                     background-position: -34px -58px;
                     display: inline-block;
                     &:hover {
@@ -90,7 +95,7 @@
                     }
                 }
 
-                & a:nth-child(4) {
+                & a:nth-child(1) {
                     background-position: -34px -87px;
                     display: inline-block;
                     &:hover {
@@ -164,11 +169,5 @@
     min-width: 980px;
     margin: 0 auto;
 }
-.header {
-    max-width: 980px;
-    min-width: 980px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
+
 
